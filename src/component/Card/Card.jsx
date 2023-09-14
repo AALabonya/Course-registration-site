@@ -13,6 +13,8 @@ const Card = () => {
     const[getData, setGetData]=useState([]);
     const[getCreditHour, setCreditHour]=useState([]);
     const[totalCost, setTotalCost] = useState();
+    const[totalCredit, setTotalCredit] = useState();
+    const [totalRemainingHour, setTotalRemainingHour] = useState(0);
 
   useEffect(()=>{
     fetch('./data.json')
@@ -23,15 +25,28 @@ const Card = () => {
 
   const handleAddCredit =(data)=>{
     const isExist = getCreditHour.find((item)=>item.id ==data.id)
-    let count = data.price;
+    let cost = data.price;
+    let hour = data.credit;
     if(isExist){
         toast("already booked this name")
     }else{
-        getCreditHour.forEach((item)=>{
-          count += item.price
+        getCreditHour.forEach((item) =>{
+        ((hour += item.credit), (cost += item.price))
         })
-        setTotalCost(count)
-        setCreditHour([...getCreditHour,data])  
+       
+        const totalHour = 20 - hour;
+
+        if (hour > 20) {
+            toast("Don't cross the limit")
+        }else{
+            setTotalRemainingHour(totalHour)
+            setTotalCredit(hour) 
+            setTotalCost(cost)
+
+            setCreditHour([...getCreditHour,data])
+            
+        }
+        
     }
    
   }
@@ -53,7 +68,7 @@ const Card = () => {
                       <div className="flex justify-between mt-1 mb-1">
                         <div>$ Price : {data.price} </div>
                        
-                        <div className="flex justify-evenly gap-5" ><img src={data.bookmark} alt="image" />Credit :{data.credit}hr</div>
+                        <div className="flex justify-evenly gap-5" ><img src={data.bookmark} alt="image" />Credit :{data.credit} hr</div>
                         </div>
                          <div className="card-actions justify-center text-center items-center ">
                      <button onClick={()=>handleAddCredit(data)}  className=" bg-blue-500 w-[300px] rounded-lg mt-2 py-2 mb-3 font-semibold">Select</button>
@@ -69,6 +84,8 @@ const Card = () => {
                     <CreditHour 
                     getCreditHour={getCreditHour}
                     totalCost={totalCost}
+                    totalCredit={totalCredit}
+                    totalRemainingHour={totalRemainingHour}
                     ></CreditHour>
                     </div>
            </div>
