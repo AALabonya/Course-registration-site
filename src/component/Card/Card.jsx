@@ -12,9 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Card = () => {
     const[getData, setGetData]=useState([]);
     const[getCreditHour, setCreditHour]=useState([]);
-    const[totalCost, setTotalCost] =useState(0)
-
-
+    const[totalCost, setTotalCost] = useState();
 
   useEffect(()=>{
     fetch('./data.json')
@@ -27,30 +25,27 @@ const Card = () => {
     const isExist = getCreditHour.find((item)=>item.id ==data.id)
     let count = data.price;
     if(isExist){
-        toast("already added this name")
+        toast("already booked this name")
     }else{
         getCreditHour.forEach((item)=>{
           count += item.price
         })
         setTotalCost(count)
-        setCreditHour([...getCreditHour,data])
-       
+        setCreditHour([...getCreditHour,data])  
     }
    
   }
 
-
-
     return (
         <div>
-           <h1 className="text-4xl text-center font-bold mt-5">Course Registration</h1> 
+             <h1 className="text-4xl text-center font-bold mt-5">Course Registration</h1> 
            <div className="flex justify-evenly mt-5">
                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 w-[1000px]">
               {
                 getData.map(data=>(
                     <div key={data.id}  className="card bg-base-100 shadow-xl rounded-lg">
                    
-                    <img className="w-80 p-2 " src={data.image} alt="image" />
+                    <img className="w-80 p-2" src={data.image} alt="image" />
                     
                       <div className="card-body p-2">
                        <h2 className="font-bold text-xl">{data.title}</h2>
@@ -58,28 +53,24 @@ const Card = () => {
                       <div className="flex justify-between mt-1 mb-1">
                         <div>$ Price : {data.price} </div>
                        
-                        <div className="flex justify-evenly gap-5" ><img src={data.bookmark} alt="" />Credit :{data.credit}hr</div>
-                      </div>
-                         <div className="card-actions justify-center text-center items-center  ">
+                        <div className="flex justify-evenly gap-5" ><img src={data.bookmark} alt="image" />Credit :{data.credit}hr</div>
+                        </div>
+                         <div className="card-actions justify-center text-center items-center ">
                      <button onClick={()=>handleAddCredit(data)}  className=" bg-blue-500 w-[300px] rounded-lg mt-2 py-2 mb-3 font-semibold">Select</button>
                      <ToastContainer />
                        </div>
                        
                        </div>
                         </div>
-                ))
-              }
+                     ))
+                    }
                </div>
-
-               
                     <div className="w-[300px]">
                     <CreditHour 
                     getCreditHour={getCreditHour}
                     totalCost={totalCost}
                     ></CreditHour>
                     </div>
-
-
            </div>
         </div>
     );
