@@ -30,7 +30,7 @@ const CreditHour = ({getCreditHour,totalCost}) => {
                        </div>
                        <hr/>
 
-                       <h2 className="font-semibold ml-3 text-lg mt-5 mb-4">Total Price : </h2>
+                       <h2 className="font-semibold ml-3 text-lg mt-5 mb-4">Total Price : {totalCost} USD </h2>
                        </div>
                         </div>
         </div>

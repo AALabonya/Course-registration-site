@@ -9,7 +9,7 @@ import CreditHour from "../Credit Hour/CreditHour";
 const Card = () => {
     const[getData, setGetData]=useState([]);
     const[getCreditHour, setCreditHour]=useState([]);
-
+    const[totalCost, setTotalCost] =useState(0)
 
 
 
@@ -22,10 +22,14 @@ const Card = () => {
 
   const handleAddCredit =(data)=>{
     const isExist = getCreditHour.find((item)=>item.id ==data.id)
-   
+    let count = data.price;
     if(isExist){
         return
     }else{
+        getCreditHour.forEach((item)=>{
+          count += item.price
+        })
+        setTotalCost(count)
         setCreditHour([...getCreditHour,data])
        
     }
@@ -66,7 +70,7 @@ const Card = () => {
                     <div className="w-[300px]">
                     <CreditHour 
                     getCreditHour={getCreditHour}
-                    
+                    totalCost={totalCost}
                     ></CreditHour>
                     </div>
 
