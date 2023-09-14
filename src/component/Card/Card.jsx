@@ -1,9 +1,16 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import { useEffect } from "react";
 import { useState } from "react";
 import CreditHour from "../Credit Hour/CreditHour";
 
+
 const Card = () => {
-    const[getData, setGetData]=useState([])
+    const[getData, setGetData]=useState([]);
+    const[getCreditHour, setCreditHour]=useState([]);
+
+
 
 
   useEffect(()=>{
@@ -11,6 +18,20 @@ const Card = () => {
     .then(res => res.json())
     .then(data=>setGetData(data))
   },[])
+
+
+  const handleAddCredit =(data)=>{
+    const isExist = getCreditHour.find((item)=>item.id ==data.id)
+   
+    if(isExist){
+        return
+    }else{
+        setCreditHour([...getCreditHour,data])
+       
+    }
+   
+  }
+
 
 
     return (
@@ -22,13 +43,18 @@ const Card = () => {
                 getData.map(data=>(
                     <div key={data.id}  className="card bg-base-100 shadow-xl rounded-lg">
                    
-                    <img className="w-80 p-2 " src={data.image} alt="Shoes" />
+                    <img className="w-80 p-2 " src={data.image} alt="image" />
                     
                       <div className="card-body p-2">
                        <h2 className="font-bold text-xl">{data.title}</h2>
-                      <p className="mt-2">{data.description}</p>
+                      <p className="mt-2 mb-2">{data.description}</p>
+                      <div className="flex justify-between mt-1 mb-1">
+                        <div>$ Price : {data.price} </div>
+                       
+                        <div className="flex justify-evenly gap-5" ><img src={data.bookmark} alt="" />Credit :{data.credit}hr</div>
+                      </div>
                          <div className="card-actions justify-center text-center items-center  ">
-                     <button className="btn btn-primary bg-blue-500 w-[300px] rounded-lg mt-2 py-2">Select</button>
+                     <button onClick={()=>handleAddCredit(data)}  className=" bg-blue-500 w-[300px] rounded-lg mt-2 py-2 mb-3 font-semibold">Select</button>
                        </div>
                        </div>
                         </div>
@@ -38,7 +64,10 @@ const Card = () => {
 
                
                     <div className="w-[300px]">
-                    <CreditHour></CreditHour>
+                    <CreditHour 
+                    getCreditHour={getCreditHour}
+                    
+                    ></CreditHour>
                     </div>
 
 
