@@ -4,6 +4,9 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import CreditHour from "../Credit Hour/CreditHour";
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Card = () => {
@@ -24,7 +27,7 @@ const Card = () => {
     const isExist = getCreditHour.find((item)=>item.id ==data.id)
     let count = data.price;
     if(isExist){
-        return
+        toast("already added this name")
     }else{
         getCreditHour.forEach((item)=>{
           count += item.price
@@ -59,7 +62,9 @@ const Card = () => {
                       </div>
                          <div className="card-actions justify-center text-center items-center  ">
                      <button onClick={()=>handleAddCredit(data)}  className=" bg-blue-500 w-[300px] rounded-lg mt-2 py-2 mb-3 font-semibold">Select</button>
+                     <ToastContainer />
                        </div>
+                       
                        </div>
                         </div>
                 ))
