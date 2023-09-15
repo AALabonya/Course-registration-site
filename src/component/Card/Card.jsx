@@ -42,28 +42,24 @@ const Card = () => {
             setTotalCredit(hour) 
             setTotalCost(cost)
 
-            setCreditHour([...getCreditHour,data])
-            
-        }
-        
+            setCreditHour([...getCreditHour,data])  
+          } 
     }
-   
-  }
+   }
 
     return (
         <div>
-             <h1 className="text-2xl  lg:text-4xl text-center font-bold mt-5">Course Registration</h1> 
-           <div className="flex flex-col md:flex-cols-2 lg:flex-row gap-10 justify-evenly mt-5 mb-10">
-               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 lg:w-[1100px]">
+             <h1 className="text-2xl text-center lg:text-4xl font-bold mt-5">Course Registration</h1> 
+           <div className="flex flex-col md:flex-cols-2 lg:flex-row gap-5 mx-auto lg:p-10 mt-3 mb-5">
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-72  md:w-[700px] lg:w-3/4 mx-auto">
               {
                 getData.map(data=>(
-                    <div key={data.id}  className="card bg-base-100 shadow-xl rounded-lg h-[460px] ">
+                    <div key={data.id}  className="card card-compact bg-base-100 shadow-xl rounded-lg h-full ">
                    
-                    <img className="w-80 md:px-5 md:pt-5 lg:w-80 lg:p-2" src={data.image} alt="image" />
-                    
+                    <img className="px-4 pt-4 md:ml-3 lg:p-2 lg:w-80 lg:ml-4" src={data.image} alt="image" />
                       <div className="card-body p-2">
-                       <h2 className="font-bold text-lg ml-2">{data.title}</h2>
-                      <p className="mt-2 mb-2 ml-2">{data.description}</p>
+                       <h2 className="font-bold lg:text-lg ml-2 md:ml-3 lg:ml-2">{data.title}</h2>
+                      <p className="mt-2 mb-2 ml-2 md:ml-3  lg:ml-2">{data.description}</p>
                       <div className="flex justify-between mt-1 mb-1 ml-2">
                         <div>$ Price : {data.price} </div>
                        
@@ -79,7 +75,7 @@ const Card = () => {
                      ))
                     }
                </div>
-                    <div className="w-[300px]">
+                    <div className="w-72 md:w-[400px] lg:w-1/4 mx-auto" >
                     <CreditHour 
                     getCreditHour={getCreditHour}
                     totalCost={totalCost}
