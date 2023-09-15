@@ -30,7 +30,7 @@
       "id": 4,
       "image": "https://i.ibb.co/PNDW52m/Rectangle-3.png",
       "title": "Basic Data Structures",
-      "description": "Explore the world of Basic Data Structures in this course. You'll learn about essential data structures and their applications in programming.",
+      "description": "Explore the world of Basic Data Structures in this course. You will learn about essential data structures and their applications in programming. A data structure is a storage that is used to store.",
       "credit": 5,
       "bookmark":"https://i.ibb.co/sJwyCX5/Frame-1.png",
       "price": 35000
@@ -39,7 +39,7 @@
       "id": 5,
       "image": "https://i.ibb.co/zNpDQQ9/Rectangle-2.png",
       "title": "Introduction to OOP Python",
-      "description": "Discover the power of object-oriented programming with Python in Introduction to OOP Python. This course will introduce you to Python's OOP concepts.",
+      "description": "Discover the power of object-oriented programming with Python in Introduction to OOP Python. This course will introduce you to Python's OOP concepts.Learn the basics of object-oriented programming.",
       "credit": 5,
       "bookmark":"https://i.ibb.co/sJwyCX5/Frame-1.png",
       "price": 19000
@@ -48,7 +48,7 @@
       "id": 6,
       "image": "https://i.ibb.co/KXjCYGF/Rectangle-2-5.png",
       "title": "Software Engineering",
-      "description": "Welcome to the world of Software Engineering. In this course, you'll delve into software development methodologies and best practices.",
+      "description": "Welcome to the world of Software Engineering. In this course, you'll delve into software development methodologies and best practices.Software engineering is the branch of computer science.",
       "credit": 2,
       "bookmark":"https://i.ibb.co/sJwyCX5/Frame-1.png",
       "price": 23000
@@ -57,7 +57,7 @@
       "id": 7,
       "image": "https://i.ibb.co/vHwVL6X/Rectangle-3-1.png",
       "title": "AWS, Cloud Computing",
-      "description": "Embark on a cloud computing journey with AWS, Cloud Computing. This course will introduce you to Amazon Web Services and cloud technologies.",
+      "description": "Embark on a cloud computing journey with AWS, Cloud Computing. This course will introduce you to Amazon Web Services and cloud technologies.AWS stands for Amazon Web Services.",
       "credit": 5,
       "bookmark":"https://i.ibb.co/sJwyCX5/Frame-1.png",
       "price": 35000
@@ -66,7 +66,7 @@
       "id": 8,
       "image": "https://i.ibb.co/NL9f0xt/Rectangle-2-1.png",
       "title": "Database (MySQL)",
-      "description": "Dive into the world of Database (MySQL). In this course, you'll learn about database design, SQL, and how to manage MySQL databases effectively.",
+      "description": "Dive into the world of Database (MySQL). In this course, you'll learn about database design, SQL, and how to manage MySQL databases effectively.It is the de-facto standard DS for web sites.",
       "credit": 5,
       "bookmark":"https://i.ibb.co/sJwyCX5/Frame-1.png",
       "price": 19000
@@ -75,7 +75,7 @@
       "id": 9,
       "image": "https://i.ibb.co/Qbg5Ddv/Rectangle-2-6.png",
       "title": "Problem-Solving Part",
-      "description": "Enhance your problem-solving skills with Problem-Solving Part. This course will challenge you with a variety of problem-solving exercises and techniques.",
+      "description": "Enhance your problem-solving skills with Problem-Solving Part. This course will challenge you with a variety of problem-solving exercises and techniques.Problem solving is the act of defining a problem.",
       "credit": 2,
       "bookmark":"https://i.ibb.co/sJwyCX5/Frame-1.png",
       "price": 23000

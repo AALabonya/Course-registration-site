@@ -26,7 +26,7 @@ const CreditHour = ({getCreditHour,totalCost,totalCredit,totalRemainingHour}) =>
 
                        <hr/>
                          <div className="card-actions justify-center ">
-                         <h2 className="font-semibold ml-3 text-lg mt-5 mb-2">Total Credit Hour :{totalCredit} </h2>
+                         <h2 className="font-semibold ml-3 text-lg mt-5 mb-2">Total Credit Hour : {totalCredit}  </h2>
                        </div>
                        <hr/>
 
