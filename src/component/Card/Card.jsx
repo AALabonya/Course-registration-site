@@ -35,7 +35,6 @@ const Card = () => {
         })
        
         const totalHour = 20 - hour;
-
         if (hour > 20) {
             toast("Credit limit is 20 hour")
         }else{
@@ -53,14 +52,14 @@ const Card = () => {
 
     return (
         <div>
-             <h1 className="text-4xl text-center font-bold mt-5">Course Registration</h1> 
-           <div className="flex justify-evenly mt-5">
-               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 w-[1000px]">
+             <h1 className="text-2xl  lg:text-4xl text-center font-bold mt-5">Course Registration</h1> 
+           <div className="flex flex-col md:flex-cols-2 lg:flex-row gap-10 justify-evenly mt-5">
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 lg:w-[1000px]">
               {
                 getData.map(data=>(
                     <div key={data.id}  className="card bg-base-100 shadow-xl rounded-lg">
                    
-                    <img className="w-80 p-2" src={data.image} alt="image" />
+                    <img className="w-80 md:px-5 md:pt-5 lg:w-80 lg:p-2" src={data.image} alt="image" />
                     
                       <div className="card-body p-2">
                        <h2 className="font-bold text-xl">{data.title}</h2>
@@ -71,7 +70,7 @@ const Card = () => {
                         <div className="flex justify-evenly gap-5" ><img src={data.bookmark} alt="image" />Credit :{data.credit} hr</div>
                         </div>
                          <div className="card-actions justify-center text-center items-center ">
-                     <button onClick={()=>handleAddCredit(data)}  className=" bg-blue-500 w-[300px] rounded-lg mt-2 py-2 font-semibold">Select</button>
+                     <button onClick={()=>handleAddCredit(data)}  className=" bg-blue-500  w-[200px] lg:w-[280px] rounded-lg mt-2 py-2 font-semibold">Select</button>
                      <ToastContainer />
                        </div>
                        
