@@ -28,7 +28,7 @@ const Card = () => {
     let cost = data.price;
     let hour = data.credit;
     if(isExist){
-        toast("already booked this name")
+        toast("You have already select this course")
     }else{
         getCreditHour.forEach((item) =>{
         ((hour += item.credit), (cost += item.price))
@@ -37,7 +37,7 @@ const Card = () => {
         const totalHour = 20 - hour;
 
         if (hour > 20) {
-            toast("Don't cross the limit")
+            toast("Credit limit is 20 hour")
         }else{
             setTotalRemainingHour(totalHour)
             setTotalCredit(hour) 
