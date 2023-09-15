@@ -60,6 +60,7 @@ const Card = () => {
                       <div className="card-body p-2">
                        <h2 className="font-bold lg:text-lg ml-2 md:ml-3 lg:ml-2">{data.title}</h2>
                       <p className="mt-2 mb-2 ml-2 md:ml-3  lg:ml-2">{data.description}</p>
+                      
                       <div className="flex justify-between mt-1 mb-1 ml-2">
                         <div>$ Price : {data.price} </div>
                        
