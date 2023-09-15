@@ -3,7 +3,7 @@
       "id": 1,
       "image": "https://i.ibb.co/znW9732/Rectangle-2-2.png",
       "title": "Introduction to C Programming",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "Welcome to the world of Introduction to C Programming. In this course, you will explore the fundamentals of C programming language and gain a strong foundation in coding.",
       "credit": 1,
       "bookmark":"https://i.ibb.co/sJwyCX5/Frame-1.png",
       "price": 15000
@@ -12,7 +12,7 @@
       "id": 2,
       "image": "https://i.ibb.co/XS7ScMq/Rectangle-2-3.png",
       "title": "Introduction to Algorithms",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "Dive into the exciting realm of Introduction to Algorithms. In this course, you'll unravel the mysteries of algorithms and their practical applications. A set of instructions for solving a problem.",
       "credit": 2,
       "bookmark":"https://i.ibb.co/sJwyCX5/Frame-1.png",
       "price": 25000
@@ -21,7 +21,7 @@
       "id": 3,
       "image": "https://i.ibb.co/yBBB0H8/Rectangle-2-4.png",
       "title": "Introduction to C++ for DSA",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "Get ready to embark on a journey through Introduction to C++ for DSA. This course will equip you with essential C++ skills for data structures and algorithms. C++ is most important now.",
       "credit": 10,
       "bookmark":"https://i.ibb.co/sJwyCX5/Frame-1.png",
       "price": 10000
@@ -30,7 +30,7 @@
       "id": 4,
       "image": "https://i.ibb.co/PNDW52m/Rectangle-3.png",
       "title": "Basic Data Structures",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "Explore the world of Basic Data Structures in this course. You'll learn about essential data structures and their applications in programming.",
       "credit": 5,
       "bookmark":"https://i.ibb.co/sJwyCX5/Frame-1.png",
       "price": 35000
@@ -39,7 +39,7 @@
       "id": 5,
       "image": "https://i.ibb.co/zNpDQQ9/Rectangle-2.png",
       "title": "Introduction to OOP Python",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "Discover the power of object-oriented programming with Python in Introduction to OOP Python. This course will introduce you to Python's OOP concepts.",
       "credit": 5,
       "bookmark":"https://i.ibb.co/sJwyCX5/Frame-1.png",
       "price": 19000
@@ -48,7 +48,7 @@
       "id": 6,
       "image": "https://i.ibb.co/KXjCYGF/Rectangle-2-5.png",
       "title": "Software Engineering",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "Welcome to the world of Software Engineering. In this course, you'll delve into software development methodologies and best practices.",
       "credit": 2,
       "bookmark":"https://i.ibb.co/sJwyCX5/Frame-1.png",
       "price": 23000
@@ -57,7 +57,7 @@
       "id": 7,
       "image": "https://i.ibb.co/vHwVL6X/Rectangle-3-1.png",
       "title": "AWS, Cloud Computing",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "Embark on a cloud computing journey with AWS, Cloud Computing. This course will introduce you to Amazon Web Services and cloud technologies.",
       "credit": 5,
       "bookmark":"https://i.ibb.co/sJwyCX5/Frame-1.png",
       "price": 35000
@@ -66,7 +66,7 @@
       "id": 8,
       "image": "https://i.ibb.co/NL9f0xt/Rectangle-2-1.png",
       "title": "Database (MySQL)",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "Dive into the world of Database (MySQL). In this course, you'll learn about database design, SQL, and how to manage MySQL databases effectively.",
       "credit": 5,
       "bookmark":"https://i.ibb.co/sJwyCX5/Frame-1.png",
       "price": 19000
@@ -75,7 +75,7 @@
       "id": 9,
       "image": "https://i.ibb.co/Qbg5Ddv/Rectangle-2-6.png",
       "title": "Problem-Solving Part",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "Enhance your problem-solving skills with Problem-Solving Part. This course will challenge you with a variety of problem-solving exercises and techniques.",
       "credit": 2,
       "bookmark":"https://i.ibb.co/sJwyCX5/Frame-1.png",
       "price": 23000

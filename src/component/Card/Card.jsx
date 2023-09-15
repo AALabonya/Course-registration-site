@@ -14,7 +14,7 @@ const Card = () => {
     const[getCreditHour, setCreditHour]=useState([]);
     const[totalCost, setTotalCost] = useState();
     const[totalCredit, setTotalCredit] = useState();
-    const [totalRemainingHour, setTotalRemainingHour] = useState(0);
+    const [totalRemainingHour, setTotalRemainingHour] = useState(20);
 
   useEffect(()=>{
     fetch('./data.json')
@@ -71,7 +71,7 @@ const Card = () => {
                         <div className="flex justify-evenly gap-5" ><img src={data.bookmark} alt="image" />Credit :{data.credit} hr</div>
                         </div>
                          <div className="card-actions justify-center text-center items-center ">
-                     <button onClick={()=>handleAddCredit(data)}  className=" bg-blue-500 w-[300px] rounded-lg mt-2 py-2 mb-3 font-semibold">Select</button>
+                     <button onClick={()=>handleAddCredit(data)}  className=" bg-blue-500 w-[300px] rounded-lg mt-2 py-2 font-semibold">Select</button>
                      <ToastContainer />
                        </div>
                        
