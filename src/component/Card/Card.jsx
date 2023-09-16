@@ -67,7 +67,7 @@ const Card = () => {
                         <div className="flex justify-evenly gap-5" ><img src={data.bookmark} alt="image" />Credit :{data.credit} hr</div>
                         </div>
                          <div className="card-actions justify-center text-center items-center ">
-                     <button onClick={()=>handleAddCredit(data)}  className=" bg-blue-500  w-[200px] lg:w-[280px] rounded-lg mt-4 py-2 font-semibold btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Select</button>
+                     <button onClick={()=>handleAddCredit(data)}  className=" bg-blue-500 w-[200px] md:w-[280px] lg:w-[280px] rounded-lg mt-4 py-2 font-semibold hover:bg-blue-800">Select</button>
                      <ToastContainer />
                        </div>
                        
