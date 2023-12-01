@@ -55,7 +55,7 @@ const Card = () => {
               {
                 getData.map(data=>(
                     <div key={data.id}  className="card card-compact bg-base-100 shadow-xl rounded-lg h-full ">
-                   
+        
                     <img className="px-4 pt-4 md:ml-3 lg:p-2 lg:w-80 lg:ml-4" src={data.image} alt="image" />
                       <div className="card-body p-2">
                        <h2 className="font-bold lg:text-lg ml-2 md:ml-3 lg:ml-2">{data.title}</h2>
@@ -69,8 +69,7 @@ const Card = () => {
                          <div className="card-actions justify-center text-center items-center ">
                      <button onClick={()=>handleAddCredit(data)}  className=" bg-blue-500 w-[200px] md:w-[280px] lg:w-[280px] rounded-lg mt-4 py-2 font-semibold hover:bg-blue-800">Select</button>
                      <ToastContainer />
-                       </div>
-                       
+                       </div> 
                        </div>
                         </div>
                      ))
